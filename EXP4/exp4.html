@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Experiment</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px auto;
+            line-height: 100px;
+            font-size: 20px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Dynamic Webpage with jQuery</h2>
+
+    <div id="box">Hello</div>
+
+    <button id="toggleBtn">Toggle</button>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="changeBtn">Change Content</button>
+    <button id="animateBtn">Animate</button>
+
+    <script>
+        // Toggle visibility
+        $('#toggleBtn').click(function () {
+            $('#box').toggle(500);
+        });
+
+        // Hide element
+        $('#hideBtn').click(function () {
+            $('#box').hide(500);
+        });
+
+        // Show element
+        $('#showBtn').click(function () {
+            $('#box').show(500);
+        });
+
+        // Change content using DOM
+        document.getElementById("changeBtn").onclick = function () {
+            document.getElementById("box").innerText = "Content Updated!";
+        };
+
+        // Animate element
+        $('#animateBtn').click(function () {
+            $('#box').animate({
+                width: '300px',
+                height: '150px',
+                fontSize: '25px'
+            }, 500);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+ * {margin: 0;padding: 0;box-sizing: border-box;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+ body {height: 100vh;display: flex;justify-content: center;align-items: center;background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);}
+ .weather-card {backdrop-filter: blur(10px);background: rgba(255, 255, 255, 0.2);padding: 2.5rem;border-radius: 20px;border: 1px solid rgba(255, 255, 255, 0.3);box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);width: 100%;max-width: 400px;text-align: center;color: white;}
+ h2 {margin-bottom: 1.5rem;letter-spacing: 1}
+ .search-box {display: flex;gap: 10px;margin-bottom: 30px;}
+ input {flex: 1;padding: 12px 15px;border-radius: 10px;border: none;outline: none;font-size: 1rem;}
+ button {padding: 12px 20px;background: #ff7e5f;border: none;border-radius: 10px;color: white;font-weight: bold;cursor: pointer;transition: 0.3s ease;}
+ button:hover {background: #feb47b;transform: translateY(-2px);}
+ .result-container {min-height: 150px;}
+ .temp {font-size: 4rem;font-weight: 800;margin: 10px 0;}
+ .city-name {font-size: 1.5rem;margin-bottom: 5px;}
+ .desc {text-transform: capitalize;font-style: italic;margin-bottom: 15px;}
+ .details {display: flex;justify-content: space-around;background: rgba(0, 0, 0, 0.1);padding: 15px;border-radius: 15px;}

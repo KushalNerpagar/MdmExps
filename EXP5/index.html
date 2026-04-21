@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App - Exp 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="weather-card">
+        <h2>Weather Forecast</h2>
+        <form onsubmit="event.preventDefault(); getWeather();">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="weatherResult" class="result-container">
+            <p>Enter a city to see the weather.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
